@@ -1,0 +1,340 @@
+.header{
+    display: flex;
+    width:95%;
+    margin: auto;
+    padding:10px 0;
+}
+.header .logo{
+    width:50%;
+}
+.header .logo img{
+    width:40%;
+}
+.header .accountInformation{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.header .accountInformation p{
+    margin:0;
+    margin-top:3px;
+    color:rgb(199, 199, 199);
+    font-size:15px;
+}
+.header .accountInformation a{
+    text-decoration:none;
+    color:#5D89C9;
+    display: table;
+    margin-top:3px;
+}
+.header .accountInformation a:hover{
+    text-decoration:underline;
+}
+.menu{
+    width:98%;
+    margin: auto;
+    display:flex;
+    background-color: #3f76c8;
+}
+.menu li{
+    list-style:none;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    padding:7px 15px;
+    color: white;
+    border-right:1px solid white;
+}
+.menu li a:hover{
+    background-color: #335c99;
+}
+.active{
+    background-color: #335c99;
+}
+.content{
+    width:100%;
+    display: flex;
+    min-height:100%;
+}
+.sidebar{
+    width:18%;
+    border-right:2px solid gray;
+    min-height:100%;
+}
+.sidebar input{
+    display:table;
+    margin:10px auto;
+    padding:7px;
+    border:1px solid rgb(160, 160, 160);
+    border-radius:2px;
+}
+.sidebar .edit{
+    display: table;
+    margin: auto;
+    font-size:55px;
+    color:#ddd;
+}
+.sidebar p{
+    width:95%;
+    margin: auto;
+    margin-top:20px;
+    line-height:25px;
+    color:rgb(182, 181, 181);
+}
+.sidebar p a{
+    text-decoration: none;
+    color: #5D89C9;
+}
+.sidebar p a:hover{
+    text-decoration: underline;
+}
+.sidebar>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.sidebar>div button{
+    padding:5px 10px;
+    border:1px solid rgb(179, 177, 177);
+    background-color: rgb(228, 227, 227);
+    margin:2%;
+    border-radius:3px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.sidebar>div button:hover{
+    background-color:rgb(209, 207, 207);
+}
+.contentRight{
+    width:82%;
+}
+.contentRight .body{
+    width:70%;
+    margin:auto;
+    position: relative;
+    padding-bottom:120px;
+}
+.contentRight .body .head h2{
+    font-size:25px;
+    color:rgb(179, 177, 177);
+}
+.contentRight .body .head h2 span{
+    color:gray;
+}
+.contentRight .body .head h2 a{
+    color:rgb(179, 177, 177);
+}
+.contentRight .body .head h2 a:hover{
+    color:gray;
+}
+.contentRight .head{
+    margin: auto;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    padding:0 15px;
+}
+.contentRight .head>.left{
+    width:70%;
+}
+.contentRight .head>.right{
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.contentRight .clientInformation{
+    display: flex;
+    padding:0 10px;
+}
+.contentRight .clientInformation>div{
+    width:50%;
+}
+.contentRight .clientInformation .right{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-top:10px;
+}
+.contentRight .clientInformation .left h4{
+    margin: 0;
+    margin-top:10px;
+    font-size:15px;
+}
+.contentRight .clientInformation .left a{
+    color:#5D89C9;
+    text-decoration: none;
+}
+.contentRight .clientInformation .left a:hover{
+    text-decoration: underline;
+}
+.contentRight .clientInformation .left p{
+    margin:5px 0;
+    padding:7px 15px;
+    background-color: #FDF7D7;
+    display: table;
+    border:2px solid #fadd5f;
+    color: #fadd5f;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+.contentRight .clientInformation .right input{
+    width:100px;
+    padding:5px;
+    margin:3px 0;
+}
+.contentRight .clientInformation .right div label{
+    font-size:14px;
+}
+.contentRight .clientInformation .right div label:first-child{
+    margin-right:10px;
+}
+.contentRight .clientInformation .right div label:last-child{
+    margin-left:10px;
+}
+.newLine{
+    display: flex;
+    margin-top:30px;
+    padding:0 10px;
+}
+.newLine .left{
+    display: flex;
+    width:60%;
+}
+.newLine .right{
+    width:40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+.newLine .left>button{
+    padding:5px 10px;
+    cursor: pointer;
+}
+.newLine .left div{
+    margin-left:10%;
+}
+.newLine .left div input{
+    width:30px;
+    padding:5px;
+}
+.newLine .left div label:first-child{
+    margin-right:10px;
+}
+.newLine .left div label:last-child{
+    margin-left:10px;
+}
+.newLine .right button{
+    padding:5px 10px;
+    cursor: pointer;
+}
+.line{
+    width:100%;
+    margin-top:20px;
+    overflow: hidden;
+}
+.line table{
+    border-collapse: collapse;
+    border:1px solid gray;
+}
+.line th{
+  background: #3f76c8;
+  padding:5px;
+  text-align: left;
+  font-size:14px;
+  color:white;
+  padding-left:10px;
+}
+.line table tr>td{
+    border:1px solid gray;
+    z-index:10;
+}
+.line tr td:first-child{
+    width:20% !important;
+    white-space: nowrap;
+    padding:0;
+}
+.line tr td:nth-child(2){
+    position: relative;
+    width:40% !important;
+}
+.line tr td:nth-child(2) .setting{
+    position: absolute;
+    right:5px;
+    top:7px;
+    cursor: pointer;
+    color:rgb(185, 183, 183);
+    transition:.3s transform;
+  
+}
+.line tr td:nth-child(2) .setting:hover{
+    transform:rotate(180deg);
+}
+.line tr td:nth-child(2) .setting:hover{
+    color:gray;
+}
+.line tr td input{
+    display:block;
+    width:97%;
+    padding:7px 0;
+    border: none;
+    z-index:0;
+    padding-left:10px;
+}
+.line tr td input:focus{
+    outline: none;
+    background-color: #FDF7D7;
+}
+.line tr td:nth-child(2) input{
+    width:95%;
+}
+.line>button{
+    font-size:40px;
+    display: block;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:10px;
+    background: none;
+    border:2px solid #3f76c8;
+    border-radius:5px;
+    padding:5px;
+    color:#3f76c8;
+    transition:.3s all ease;
+    cursor: pointer;
+}
+.line>button:hover{
+    background-color:#3f76c8;
+    color:white;
+}
+.totalCount{
+    width:40%;
+    border:1px solid rgb(182, 182, 182);
+    position: absolute;
+    right:0;
+    bottom:10;
+    border-radius:5px;
+}
+.totalCount p{
+    margin:0;
+    font-size:15px;
+    margin:7px 0;
+    padding-left:50px;
+}
+.totalCount p:last-child{
+    background-color:#ddd;
+    padding:10px;
+    margin:0;
+    padding-left:50px;
+}
+.totalCount p span{
+    position: absolute;
+    right:10px;
+}
+.totalCount .rupe{
+    font-size:12px;
+    margin-right:5px;
+}
